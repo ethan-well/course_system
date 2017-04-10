@@ -6,7 +6,10 @@
 
 ```base
 #clone 到本地
-https://github.com/wewin11235/course_system.git
+git clone https://github.com/wewin11235/course_system.git
+
+#进入项目
+cd course_system
 
 #安装gem和依赖
 bundle install
