@@ -20,6 +20,7 @@ rails db:setup
 #启动项目
 rails s
 
-#根路由指向 `GET /teachers`
-
+#说明
+根路由指向 `GET /teachers`
+数据量: Student.all.length => 8, Teacher.all.length => 4, Course.all.length => 12
 ```
