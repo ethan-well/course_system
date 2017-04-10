@@ -8,13 +8,13 @@ class TeachersController < ApplicationController
   #删除老师后,老师对应的课程也将删除
   def destroy
     begin
-      teacher = Teacher.find(param[:id])
+      teacher = Teacher.find(params[:id])
       teacher.destroy!
-      message = "删除成功"
+      flash[:error] = "删除成功"
     rescue
-      message = "删除失败"
+      flash[:success] = "删除成功"
     end
 
-    render json: {message: message}
+    redirect_to :back
   end
 end
