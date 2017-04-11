@@ -21,6 +21,6 @@ rails db:setup
 rails s
 
 #说明
-根路由指向 `GET /teachers`
+master分支实现了要求的三个API; my_design分支加了一个简单页面
 数据量: Student.all.length => 8, Teacher.all.length => 4, Course.all.length => 12
 ```
